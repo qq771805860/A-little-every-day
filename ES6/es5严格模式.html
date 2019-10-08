@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		// ES5严格模式
+	"use strict";
+		if (true) {
+			
+		  function f() {
+			  console.log(1)
+		  }
+		  f()
+		}
+		// 报错
+		console.log('nihao')
+		// 考虑到环境导致的行为差异太大，应该避免在块级作用域内声明函数。如果确实需要，也应该写成函数表达式，而不是函数声明语句。
+		
+		// // 函数声明语句
+		// {
+		//   let a = 'secret';
+		//   function f() {
+		//     return a;
+		//   }
+		// }
+		
+		// // 函数表达式
+		// {
+		//   let a = 'secret';
+		//   let f = function () {
+		//     return a;
+		//   };
+		// }
+	</script>
+</html>
